@@ -1,0 +1,61 @@
+:root {
+  --light-color-1 : rgb(130,76,76);
+  --light-color-2 : rgb(148,102,102);
+  --light-color-3 : rgb(166,127,127);
+  --light-color-4 : rgb(183,153,153);
+  --light-color-5 : rgb(201,178,178);
+  --gray-color-1: rgb(61,0,0);
+  --gray-color-2: rgb(69,0,0);
+  --gray-color-3: rgb(77,0,0);
+  --gray-color-4: rgb(94,25,25);
+  --gray-color-5: rgb(112,50,50);
+  --dark-color-1: rgb(23,0,0);
+  --dark-color-2: rgb(30,0,0);
+  --dark-color-3: rgb(38,0,0);
+  --dark-color-4: rgb(46,0,0);
+  --dark-color-5: rgb(53,0,0);
+}
+
+@font-face {
+  font-family: ThunderScript;
+  src: url("../font/thunderlightning_script.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, var(--light-color-5),
+  var(--light-color-4), var(--light-color-3), var(--light-color-2),
+  var(--light-color-1));
+  color: white;
+}
+
+.gray-color-5 {
+  background-color: var(--gray-color-5);
+}
+
+#logo-text {
+  font-family: ThunderScript;
+}
+
+#background-top {
+  /*max-width: 1600px;*/
+  height: 100vh;
+}
+
+@keyframes logo-growth {
+  from {max-width: 20%;}
+  to {max-width: 80%;}
+}
+
+#main-logo {
+  animation-name: logo-growth;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.project-title {
+  background-color: var(--dark-color-3);
+  border-radius: 0 0 10px 0;
+}
